@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Listado de alumnos</h2>
+
+    <?php
+        $alumnos = ["Jose David", "Pablo", "Antonio López", "Juanjo", "José Julián", "Mariano", "Alejandro Valero", "Gonzalo", "Antonio Sánchez", "Juan José", "Juan Fco Hervás", "Israel"];
+
+    foreach($alumnos as $alumno){
+        print("<ol>");
+            print($alumnos);
+        print("</ol>");
+    }
+    ?>
+</body>
+</html>
