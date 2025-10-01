@@ -1,0 +1,25 @@
+table, tr, td{
+    border-collapse:collapse;
+}
+
+table{
+    background-color: red;
+    border: 3px solid black;
+
+}
+
+tr{
+    background-color: bisque;
+}
+
+td{
+    border-color: red;
+}
+
+td, tr{
+    border: 2px solid red;
+}
+
+th{
+    background-color: grey;
+}
