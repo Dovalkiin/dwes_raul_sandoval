@@ -5,12 +5,24 @@ table{
 
 td{
     border: 2px solid black;
-    width: anchor-size();
 }
 
-body{
+.tabla{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0px;
+}
+
+.pie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

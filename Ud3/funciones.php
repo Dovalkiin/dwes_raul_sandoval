@@ -4,7 +4,6 @@ function conectar()
 {
     global $HOSTNAME,$USERNAME,$PASSWORD,$DATABASE;
 	$idcnx = mysqli_connect($HOSTNAME, $USERNAME, $PASSWORD,$DATABASE) or die("Error de conexión con la base de datos");
-    mysqli_set_charset($idcnx,"utf8");			
-	return $idcnx;		
+    mysqli_set_charset($idcnx,"latin1");			
+	return $idcnx;
 }
-?>

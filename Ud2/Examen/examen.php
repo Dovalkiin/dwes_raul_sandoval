@@ -8,7 +8,7 @@
 <body>
     <form action="" method="post">
     <label>Juegos: </label>
-    <select name="precio_juegos" multiple>
+    <select name="precio_juegos[]" multiple>
         <option value="Assasins Creed">Assasins Creed</option>
         <option value="FarCry">FarCry</option>
         <option value="Spiderman">Spiderman</option>
@@ -19,13 +19,14 @@
     $precios = ["Assasins Creed" => 30,
                 "FarCry" => 15,
                 "Spiderman" => 40];
-
+    $suma_total = 0;
     if(isset($_POST["submit"])){
-        foreach ($_post["precio_juegos"] as $juego){
-            $precio_juegos = $precios[$juego];
-            echo $precio_juegos;
+        $juegos = $_POST["precio_juegos"]??[];
+        foreach ($juegos as $juego){
+            $suma_total += $precios[$juego];
         }
     }
+    echo $suma_total;
     ?>
 </body>
 </html>
