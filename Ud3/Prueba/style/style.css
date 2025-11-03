@@ -1,0 +1,55 @@
+body {
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+.centrado {
+	text-align: center;
+}
+.derecha {
+	text-align: right;
+}
+
+#cab {
+	background-color:beige;
+	color:blue;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#pie {
+	margin-top: 1rem;
+	background-color: beige;
+	font-family: 'Courier New';
+	font-size: 0.8rem;
+}
+
+table {
+	font-family:Arial; 
+	/*text-align: center;*/
+	width:100%; 
+	border-collapse: collapse;
+}
+
+th {
+	font-size:1.2em; 
+	border: 1px solid #98b;
+	padding-top:5px; 
+	padding-bottom:4px;
+	background-color:#aaa; 
+	color:#fff;
+}
+
+td {
+	text-align: left;
+	font-size:1em; 
+	border:1px solid #98b;
+	padding:4px 7px 2px 7px;
+}
+/*Las filas impares*/
+tr:nth-child(odd) {
+	color:#000; 
+	background-color:#eee;	
+}
+
+.alt {
+	color:#000; 
+	background-color:#eee;
+}	

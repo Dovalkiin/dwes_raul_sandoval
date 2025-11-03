@@ -11,6 +11,8 @@
     <?php
     require "config.php";
     require "funciones.php";
+    $cnx = "SELECT Name, Population
+            FROM city"
     ?>
     <form action="" method="post">
         <table>

@@ -12,11 +12,12 @@ require "cabecera.php";
                             WHERE Name = 'Spain') AND (Population > 200000)";
 
 
-        $consulta = mysqli_query($cnx, $msql1);
+        $res = mysqli_query($cnx, $msql1);
 
-        while ($lista = mysqli_fetch_assoc($consulta)) {
+        while ($lista = mysqli_fetch_array($res)) {
             print("<tr><td>" . $lista['Name'] . "</td>" . "<td>" . $lista['Population'] . "</td>" . "</tr>");
         }
     echo "</table>";
     echo "</div>";
 require "pie.php";
+?>
