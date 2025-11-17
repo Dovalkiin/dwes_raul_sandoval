@@ -1,0 +1,36 @@
+.azul{
+    color: blue;
+}
+.fondo_cabecera{
+    background-color: blanchedalmond;
+}
+
+body{
+    justify-content: center;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+
+}
+
+tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: rgb(196, 195, 195);
+    color: white;
+}
+
+tr:nth-child(odd) td{
+    background-color: rgb(238, 238, 238);
+}
